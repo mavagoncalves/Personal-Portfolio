@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Portfolio — Home</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="header-inner">
+				<a class="brand" href="index.html">Mava Goncalves</a>
+                 <input type="checkbox" id="nav-check" aria-label="Toggle navigation">
+                 <label class="nav-label" for="nav-check">☰</label>
+				<nav class="main-nav">
+                    <a href="index.html">Home</a>
+                    <a href="#about">About</a>
+					<a href="projects.html">Projects</a>
+					<a href="gallery.html">Gallery</a>
+					<a href="contact.html">Contact</a>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<section class="hero">
+				<div class="hero-inner">
+					<div class="hero-text">
+						<h1>Hi, I'm Mava Goncalves</h1>
+						<p class="lead">Software Developer in progress</p>
+						<p>
+							<a class="btn" href="projects.html">See my projects</a>
+							<a class="btn btn-ghost" href="contact.html">Get in touch</a>
+						</p>
+					</div>
+					<div class="profile">
+						<!-- Placeholder for a portrait or illustration -->
+						<img class= "avatar" src="assets/profilepic.png" alt="Portrait of Mava Goncalves"/>
+					</div>
+				</div>
+			</section>
+
+			<section class="about container" id="about">
+				<h2>About me</h2>
+				<p>I'm a Second year Software Development student with a strong interest and passion for game development.</p>
+			</section>
+        <!-- add education maybe   -->
+
+			<section class="projects container" id="projects">
+				<h2>Projects</h2>
+				<div class="projects-grid">
+					<article class="project-card">
+						<div class="thumb" role="img" aria-label="Project 1 screenshot"></div>
+						<h3>LetEmCook</h3>
+						<p>Short description of the project and what problem it solves.</p>
+						<p><a href="projects.html">+</a></p>
+					</article>
+					<article class="project-card">
+						<div class="thumb" role="img" aria-label="Project 2 screenshot"></div>
+						<h3>Piggy</h3>
+						<p>Short description highlighting tech used and outcome.</p>
+						<p><a href="projects.html">+</a></p>
+					</article>
+					<article class="project-card">
+						<div class="thumb" role="img" aria-label="Project 3 screenshot"></div>
+						<h3>Museo</h3>
+						<p>Short summary with a link to the full case study.</p>
+						<p><a href="projects.html">+</a></p>
+					</article>
+				</div>
+			</section>
+
+			<section id="contact" class="contact container">
+				<h2>Contact</h2>
+				<p>If you'd like to work together, email me at <a href="mailto:mavagoncalves@gmail.com">mavagoncalves@gmail.com</a> or use the contact form on the projects page.</p>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container footer-inner">
+				<p>© <span id="year">2025</span> Mava's Portfolio</p>
+			</div>
+		</footer>
+	</body>
+</html>
