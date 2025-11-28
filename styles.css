@@ -172,6 +172,47 @@ section {
 }
 
 /* -----------------------------------------------------
+   SKILLS SECTION
+----------------------------------------------------- */
+.skills-list {
+    margin-left: -2.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.skills-list li {
+    list-style: none;
+    background: var(--card-bg);
+    padding: 1rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+}
+
+.skill-bar {
+    height: 14px;
+    background:var(--bg);
+    border-radius: 999px;
+    overflow: hidden;
+    margin: 0.5rem 0;
+}
+
+.skill-bar span {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, var(--brand), var(--brand-light));
+    border-radius: inherit;
+    transition: width 0.8s ease;
+}
+
+.skill-story {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--muted);
+}
+
+/* -----------------------------------------------------
    PROJECTS PREVIEW
 ----------------------------------------------------- */
 .projects-grid {
@@ -196,7 +237,7 @@ section {
 
 .thumb {
     height: 140px;
-    background: linear-gradient(135deg,#ecf6ec,#ffffff);
+    background: var(--bg);
     border-radius: 8px;
     margin-bottom: 0.75rem;
 }
@@ -208,14 +249,88 @@ section {
 }
 
 /* -----------------------------------------------------
+   PROJECTS PAGE TIMELINE
+----------------------------------------------------- */
+.page-projects main {
+    padding-top: 3rem;
+}
+
+/* Main layout: wide content, comfortable spacing */
+.projects-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+/* Project case study cards */
+.project-card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid #eef3ef;
+    transition: 0.25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Titles */
+.project-card h2 {
+    margin-top: 0;
+    font-size: 1.9rem;
+}
+
+.project-card .muted {
+    color: var(--muted);
+    margin-bottom: 1rem;
+}
+
+/* Section headings inside each project */
+.project-card h3 {
+    margin-top: 1.75rem;
+    color: var(--brand);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+/* Divider */
+.project-card h3::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #e9eee9;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+.project-card p {
+    margin: 0.5rem 0 1rem;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* -----------------------------------------------------
    FOOTER
 ----------------------------------------------------- */
-.site-footer {
+.site-footer > .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 1rem 0;
     margin-top: 2rem;
     border-top: 1px solid #e6e9ee;
-    text-align: center;
     color: var(--muted);
+}
+
+.social-link {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--brand-light);
 }
 
 /* -----------------------------------------------------
@@ -258,5 +373,19 @@ section {
     .projects-grid {
         grid-template-columns: 1fr;
     }
-}
 
+    .projects-list{
+        grid-template-columns: 1fr;
+    }
+
+    .skills-list{
+        grid-template-columns: 1fr;
+    }
+
+    .skills-list li {
+        padding: 0.8rem;
+    }
+    .skill-bar {
+        height: 12px;
+    }
+}
