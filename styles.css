@@ -409,6 +409,9 @@ section {
 /* -----------------------------------------
    CONTACT PAGE
 ----------------------------------------- */
+.contact-home{
+    margin-top: -5rem;
+}
 
 .contact {
     margin-top: -1rem;
