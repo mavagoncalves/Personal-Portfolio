@@ -55,7 +55,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;  /* brand left, nav right */
-    padding: 0.75rem 2rem;           /* add horizontal padding */
+    padding: 0.75rem 2rem;           /* horizontal padding */
     max-width: var(--container);
     margin: 0 auto;
     gap: 1rem;
@@ -622,5 +622,3 @@ section {
         gap: 2rem;
     }
 }
-
-
