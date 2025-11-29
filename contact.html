@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Portfolio — Projects</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+    <body>
+		<!-- HEADER -->
+		<header class="site-header">
+			<div class="header-inner">
+				<a class="brand" href="index.html">Mava Goncalves</a>
+
+				<!-- NAV -->
+                 <input type="checkbox" id="nav-check" aria-label="Toggle navigation">
+                 <label class="nav-label" for="nav-check">☰</label>
+				<nav class="main-nav">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#about">About</a>
+					<a href="projects.html">Projects</a>
+					<a href="gallery.html">Gallery</a>
+					<a href="contact.html">Contact</a>
+				</nav>
+			</div>
+		</header>
+        
+        <main class="container">
+            <section class="contact container">
+                <h1>Contact Me</h1>
+                <p class="muted">Feel free to reach out for collaborations, opportunities, or just to say hello.</p>
+
+                <div class="contact-grid">
+                    <form class="contact-form">
+                        <label> Name <input type="text" name="name" required /></label>
+                        <label> Email <input type="email" name="email" required /></label>
+                        <label> Message <textarea name="message" rows="5" required></textarea></label>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                    
+                    <div class="contact-info">
+                        <h2>Connect</h2>
+                        <ul>
+                            <li><strong>Email:</strong> <a href="mailto:mavagoncalves@gmail.com" class="social-link">mavagoncalves@gmail.com</a></li>
+                            <li><strong>Location:</strong> Kristianstad, Sweden</li>
+                            <li><strong>GitHub:</strong> <a href="https://github.com/mavagoncalves" class="social-link" target="_blank" rel="noopener">mavagoncalves</a></li>
+                            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/mavagoncalves" class="social-link" target="_blank" rel="noopener">Valentina Goncalves</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+			<div class="contact-footer">
+				<p>© <span id="year">2025</span> Mava Goncalves</p>
+			</div>
+		</footer>
+    </body>
+</html>
