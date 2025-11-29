@@ -103,7 +103,7 @@ img {
    HERO SECTION
 ----------------------------------------------------- */
 .hero {
-    padding: 5rem 20rem 3rem; /* desktop default */
+    padding: 5rem 10rem 3rem; /* desktop default */
 }
 
 .hero-inner {
@@ -172,14 +172,21 @@ section {
 }
 
 /* -----------------------------------------------------
-   SKILLS SECTION
+   SKILLS + EXPERIENCE LAYOUT
 ----------------------------------------------------- */
+
+.skills-experience {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
 .skills-list {
     margin-left: -2.5rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 1.5rem;
-    margin-top: 1rem;
 }
 
 .skills-list li {
@@ -211,6 +218,29 @@ section {
     font-size: 0.95rem;
     color: var(--muted);
 }
+
+/* ---------- Experience ---------- */
+
+.experience h2 {
+    margin-bottom: 1rem;
+}
+
+/* Timeline container */
+.experience {
+    position: relative;
+    margin-left: 1rem;
+}
+
+.experience-item h3 {
+    font-weight: 700;
+}
+
+.exp-date {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 2px;
+}
+
 
 /* -----------------------------------------------------
    PROJECTS PREVIEW
@@ -396,8 +426,15 @@ section {
 }
 
 /* -----------------------------------------------------
-   MOBILE & TABLET (max-width: 900px)
+   MOBILE & TABLET
 ----------------------------------------------------- */
+@media (max-width: 600px) {
+    .image-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
 @media (max-width: 900px) {
     .hero {
         padding: 3rem 1rem 2rem;
@@ -440,23 +477,16 @@ section {
         grid-template-columns: 1fr;
     }
 
-    .skills-list{
+    .skills-experience{
         grid-template-columns: 1fr;
     }
 
-    .skills-list li {
-        padding: 0.8rem;
-    }
     .skill-bar {
         height: 12px;
     }
     .image-gallery {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
-@media (max-width: 600px) {
-    .image-gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
+
