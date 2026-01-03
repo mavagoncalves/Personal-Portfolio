@@ -64,3 +64,30 @@ const validateSubject = () => {
         return true;
     }
 };
+
+
+const validateMessage = () => {
+    const messageValue = messageInput.value.trim();
+    
+    // update counter text
+    charCount.textContent = `${messageValue.length}/20`;
+    
+    // change counter color
+    if (messageValue.length >= 20) {
+        charCount.classList.add('valid');
+    } else {
+        charCount.classList.remove('valid');
+    }
+
+    // validate logic
+    if (messageValue.length < 20) {
+        showError(messageInput, 'messageError', 'Message must be at least 20 characters');
+        return false;
+    } else {
+        clearError(messageInput, 'messageError');
+        return true;
+    }
+};
+
+// event listener for typing
+messageInput.addEventListener('input', validateMessage);
