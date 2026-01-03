@@ -102,3 +102,25 @@ const displayProjects = (projectsToShow) => {
 
 // display all projects
 displayProjects(projects);
+
+const filterButtons = document.querySelectorAll('.filter-btn');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        //remove active class buttons
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        // Add active to clicked button
+        button.classList.add('active');
+
+        // get category
+        const category = button.getAttribute('data-category');
+
+        // filter data
+        if (category === 'all') {
+            displayProjects(projects);
+        } else {
+            const filtered = projects.filter(project => project.category === category);
+            displayProjects(filtered);
+        }
+    });
+});
