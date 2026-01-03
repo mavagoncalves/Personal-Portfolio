@@ -502,6 +502,40 @@ section {
     transform: translateY(-2px);
 }
 
+.error-msg {
+    color: #dc3545;
+    font-size: 0.85rem;
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s ease;
+    display: block;
+}
+
+.error-msg.visible {
+    height: auto;
+    margin-top: 0.25rem;
+}
+
+/* Success Message */
+.success-msg {
+    color: #2f7d32;
+    background-color: #e2f1e2;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+/* Character Counter */
+#charCount {
+    font-weight: bold;
+    color: #e232449e;
+    font-size: smaller;
+}
+#charCount.valid {
+    color: #2f7d32; /* Green when valid */
+}
 /* -----------------------------------------
    CONTACT INFO
 ----------------------------------------- */
