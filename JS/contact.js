@@ -24,3 +24,20 @@ const clearError = (element, errorId) => {
     errorElement.textContent = '';
     errorElement.classList.remove('visible');
 };
+
+const validateName = () => {
+    const nameValue = nameInput.value.trim();
+    // Regex --> Only letters and spaces
+    const nameRegex = /^[A-Za-z\s]+$/;
+    
+    if (nameValue === '') {
+        showError(nameInput, 'nameError', 'Name is required');
+        return false;
+    } else if (!nameRegex.test(nameValue)) {
+        showError(nameInput, 'nameError', 'Name must contain letters only');
+        return false;
+    } else {
+        clearError(nameInput, 'nameError');
+        return true;
+    }
+};
