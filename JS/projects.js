@@ -35,3 +35,70 @@ const projects = [
         link: "#"
     },
 ];
+
+
+// DOM elements
+const projectsContainer = document.getElementById('projects-container');
+const projectCounter = document.getElementById('project-counter');
+
+const displayProjects = (projectsToShow) => {
+    // Clear container
+    projectsContainer.textContent = '';
+    
+    // Loop through the projects to create elements
+    projectsToShow.forEach(project => {
+        // card container
+        const card = document.createElement('article');
+        card.classList.add('project-card');
+
+        // image
+        const img = document.createElement('img');
+        img.src = project.image;
+        img.alt = project.title;
+        img.classList.add('thumb');
+
+        // title
+        const h2 = document.createElement('h2');
+        h2.textContent = project.title;
+
+        // category
+        const categoryP = document.createElement('p');
+        categoryP.classList.add('muted');
+        categoryP.textContent = project.category;
+
+        // description
+        const descP = document.createElement('p');
+        descP.textContent = project.description;
+
+        // technology stack section
+        const techDiv = document.createElement('div');
+        techDiv.style.marginTop = '1rem';
+        
+        const techSmall = document.createElement('small');
+        
+        // bold label
+        const boldLabel = document.createElement('strong');
+        boldLabel.textContent = 'Tech: ';
+        
+        // Append label and text list
+        techSmall.appendChild(boldLabel);
+        techSmall.append(project.technologies.join(', '));
+        techDiv.appendChild(techSmall);
+
+        // Assemble the card
+        card.appendChild(img);
+        card.appendChild(h2);
+        card.appendChild(categoryP);
+        card.appendChild(descP);
+        card.appendChild(techDiv);
+
+        // Add card to container
+        projectsContainer.appendChild(card);
+    });
+
+    // Update counter text
+    projectCounter.textContent = `Showing ${projectsToShow.length} of ${projects.length} projects`;
+};
+
+// display all projects
+displayProjects(projects);
