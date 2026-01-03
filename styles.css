@@ -289,11 +289,39 @@ section {
 /* -----------------------------------------------------
    PROJECTS PAGE TIMELINE
 ----------------------------------------------------- */
+.filter-buttons {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.filter-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--brand);
+    background: transparent;
+    color: var(--brand);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background: var(--brand);
+    color: white;
+}
+
+.projects-grid-full {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
 .page-projects main {
     padding-top: 3rem;
 }
 
-/* Main layout: wide content, comfortable spacing */
+
 .projects-section {
     max-width: 900px;
     margin: 0 auto;
