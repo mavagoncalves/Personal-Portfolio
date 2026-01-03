@@ -41,3 +41,16 @@ const validateName = () => {
         return true;
     }
 };
+
+const validateEmail = () => {
+    const value = emailInput.value.trim();
+
+    // does it have an '@' AND a '.'?
+    if (!value.includes('@') || !value.includes('.')) {
+        showError(emailInput, 'emailError', 'Email must contain @ and .');
+        return false;
+    }
+
+    clearError(emailInput, 'emailError');
+    return true;
+};
