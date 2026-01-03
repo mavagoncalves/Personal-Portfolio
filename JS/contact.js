@@ -110,6 +110,11 @@ form.addEventListener('submit', (event) => {
         // clear Form
         form.reset();
 
+        // remove success classes
+        [nameInput, emailInput, subjectInput, messageInput].forEach(input => {
+            input.classList.remove('success');
+        });
+
         // hide message after 3 seconds
         setTimeout(() => {
             successMsg.style.display = 'none';
