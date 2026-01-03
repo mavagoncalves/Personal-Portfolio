@@ -91,3 +91,28 @@ const validateMessage = () => {
 
 // event listener for typing
 messageInput.addEventListener('input', validateMessage);
+
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault(); // Stop page reload
+
+    const isNameValid = validateName();
+    const isEmailValid = validateEmail();
+    const isSubjectValid = validateSubject();
+    const isMessageValid = validateMessage();
+
+    if (isNameValid && isEmailValid && isSubjectValid && isMessageValid) {
+        // show success message
+        const firstName = nameInput.value.split(' ')[0];
+        successMsg.textContent = `Thank you ${firstName}! I will contact you soon!`;
+        successMsg.style.display = 'block';
+        
+        // clear Form
+        form.reset();
+
+        // hide message after 3 seconds
+        setTimeout(() => {
+            successMsg.style.display = 'none';
+        }, 3000);
+    }
+});
