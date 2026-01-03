@@ -31,44 +31,16 @@
 
             <section class="projects-list">
                 <h1>Projects</h1>
-                <article id="letemcook" class="project-card">
-                    <h2>LetEmCook</h2>
-                    <p class="muted">Team project — 2024</p>
-                    <p><strong>Problem:</strong> Need for an application to store recipes to track macronutrients and calories.<br>
-                        <strong>My role:</strong> Developer, Scrum Master and Tester.</p>
-                    
-                    <h3>What I built</h3>
-                    <p>Input for recipes, storing of ingredients in the database and recipes search and filtering.</p>
-                        
-                    <h3>What I learned</h3>
-                    <p>How to work with an agile development framework as Scrum, with active role switching between the team members.</p>
-                </article>
-                
-                <article id="piggy" class="project-card">
-                    <h2>Piggy</h2>
-                    <p class="muted">Team project — 2025</p>
-                    <p><strong>Problem:</strong> A project to practice test-driven development.<br>
-                        <strong>My role:</strong> Backend and tester.</p>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">All Projects</button>
+                    <button class="filter-btn" data-category="Web Development">Web Dev</button>
+                    <button class="filter-btn" data-category="Game Development">Game Dev</button>
+                    <button class="filter-btn" data-category="Team Project">Team Projects</button>
+                </div>
 
-                    <h3>What I built</h3>
-                    <p>AI for computer-player playmode, Makefile set up for the whole project, API documentation, UML with reverse engeneering and tests for multiple of the classes of the project.</p>
+                <p id="project-counter" class="muted">Showing all projects</p>
 
-                    <h3>What I learned</h3>
-                    <p>How to automate file creation, full project set-up and game development.</p>
-                </article>
-
-                <article id="museo" class="project-card">
-                    <h2>Museo</h2>
-                    <p class="muted"> Solo project — 2025</p>
-                    <p><strong>Problem:</strong> Website for posts showcase with contact form<br>
-                    <strong>My role:</strong> Frontend Developer</p>
-
-                    <h3>What I built</h3>
-                    <p>Full frontend for website with home page, posts display and functional contact form.</p>
-
-                    <h3>What I learned</h3>
-                    <p>CSS, HTML and Javascript</p>
-                </article>
+                <div id="projects-container" class="projects-grid-full"></div>
             </section>
         </main>
         
