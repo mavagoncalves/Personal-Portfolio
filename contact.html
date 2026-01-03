@@ -31,12 +31,25 @@
                 <p class="muted">Feel free to reach out for collaborations, opportunities, or just to say hello.</p>
 
                 <div class="contact-grid">
-                    <form class="contact-form">
-                        <label> Name <input type="text" name="name" required /></label>
-                        <label> Email <input type="email" name="email" required /></label>
-                        <label> Subject <input type="text" name="subject" placeholder="Message tittle" required></label>
-                        <label> Message <textarea name="message" rows="5" required></textarea></label>
-                        <button type="submit" class="btn">Send Message</button>
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <label> Name 
+                            <input type="text" id="name" name="name" required />
+                            <span class="error-msg" id="nameError"></span>
+                        </label>
+
+                        <label> Email 
+                            <input type="email" id="email" name="email" required />
+                            <span class="error-msg" id="emailError"></span>
+                        </label>
+
+                        <label> Subject
+                            <span class="error-msg" id="subjectError"></span>
+                        </label>
+
+                        <label> Message 
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <span class="error-msg" id="messageError"></span>
+                        </label>
                     </form>
                     
                     <div class="contact-info">
