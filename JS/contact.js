@@ -54,3 +54,13 @@ const validateEmail = () => {
     clearError(emailInput, 'emailError');
     return true;
 };
+
+const validateSubject = () => {
+    if (subjectInput.value === "") {
+        showError(subjectInput, 'subjectError', 'Please select a subject');
+        return false;
+    } else {
+        clearError(subjectInput, 'subjectError');
+        return true;
+    }
+};
