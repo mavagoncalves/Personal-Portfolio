@@ -82,7 +82,7 @@ const displayProjects = (projectsToShow) => {
 
         const link = document.createElement('a');
         link.href = project.link;
-        link.textContent = 'View Project';
+        link.textContent = 'View Project →';
         link.target = '_blank';                    // Opens in new tab
         link.rel = 'noopener noreferrer';
         link.style.fontSize = '1.4rem';              
