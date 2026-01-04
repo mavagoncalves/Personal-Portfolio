@@ -67,25 +67,20 @@ const validateSubject = () => {
 
 
 const validateMessage = () => {
-    const messageValue = messageInput.value.trim();
+    const value = messageInput.value;
+    const currentLength = value.length;
     
     // update counter text
-    charCount.textContent = `${messageValue.length}/20`;
+    charCount.textContent = `${currentLength}/20 characters`;
     
     // change counter color
-    if (messageValue.length >= 20) {
+    if (currentLength >= 20) {
         charCount.classList.add('valid');
-    } else {
-        charCount.classList.remove('valid');
-    }
-
-    // validate logic
-    if (messageValue.length < 20) {
-        showError(messageInput, 'messageError', 'Message must be at least 20 characters');
-        return false;
-    } else {
         clearError(messageInput, 'messageError');
         return true;
+    } else {
+        charCount.classList.remove('valid');
+        return false;
     }
 };
 

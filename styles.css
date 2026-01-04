@@ -494,22 +494,35 @@ section {
 }
 
 .contact-form input,
-.contact-form textarea {
+.contact-form textarea,
+.contact-form select {
+    width: 100%;
+    padding: 0.8rem;
     margin-top: 0.5rem;
-    padding: 0.8rem 1rem;
-    border-radius: var(--radius);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background: var(--bg);
-    color: var(--text);
+    border: 1px solid #ccc;
+    border-radius: 20px;
     font-size: 1rem;
     outline: none;
-    transition: border 0.2s ease, box-shadow 0.2s ease;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-form input:focus,
-.contact-form textarea:focus {
+.contact-form textarea:focus,
+.contact-form select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.contact-form input.error,
+.contact-form textarea.error,
+.contact-form select.error {
+    border-color: #dc3545;
+}
+
+.contact-form input.success,
+.contact-form textarea.success,
+.contact-form select.success {
     border-color: var(--brand);
-    box-shadow: 0 0 0 2px rgba(var(--brand-rgb), 0.3);
 }
 
 /* Submit button */
@@ -555,14 +568,15 @@ section {
     margin-top: 1rem;
 }
 
-/* Character Counter */
 #charCount {
+    color: #dc3545;
     font-weight: bold;
-    color: #e232449e;
-    font-size: smaller;
+    font-size: 0.77rem;
+    transition: color 0.3s ease;
 }
+
 #charCount.valid {
-    color: #2f7d32; /* Green when valid */
+    color: #28a745;
 }
 /* -----------------------------------------
    CONTACT INFO
