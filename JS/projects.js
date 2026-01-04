@@ -79,6 +79,18 @@ const displayProjects = (projectsToShow) => {
         // bold label
         const boldLabel = document.createElement('strong');
         boldLabel.textContent = 'Tech: ';
+
+        const link = document.createElement('a');
+        link.href = project.link;
+        link.textContent = 'View Project';
+        link.target = '_blank';                    // Opens in new tab
+        link.rel = 'noopener noreferrer';
+        link.style.fontSize = '1.4rem';              
+        link.style.color = 'var(--brand)';
+        link.style.textDecoration = 'none';
+        link.style.marginTop = '1rem';
+        link.style.display = 'inline-block';
+        link.style.cursor = 'pointer';
         
         // Append label and text list
         techSmall.appendChild(boldLabel);
@@ -91,6 +103,7 @@ const displayProjects = (projectsToShow) => {
         card.appendChild(categoryP);
         card.appendChild(descP);
         card.appendChild(techDiv);
+        card.appendChild(link);
 
         // Add card to container
         projectsContainer.appendChild(card);
