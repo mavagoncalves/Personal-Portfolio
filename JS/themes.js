@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
 
     const themeButtons = document.querySelectorAll('.theme-btn');
     const body = document.body;

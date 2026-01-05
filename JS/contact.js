@@ -43,7 +43,7 @@ const validateName = () => {
 };
 
 const validateEmail = () => {
-    const value = emailInput.value.trim();
+    const value = emailInput.value.trim().toLowerCase();
 
     // does it have an '@' AND a '.'?
     if (!value.includes('@') || !value.includes('.')) {

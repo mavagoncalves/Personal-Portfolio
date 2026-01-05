@@ -31,10 +31,14 @@ const projects = [
         title: "Portfolio",
         description: "This personal portfolio website featuring interactive elements and theme management.",
         category: "Web Development",
-        technologies: ["HTML", "CSS", "Git"],
+        technologies: ["HTML", "CSS"],
         link: "#"
     },
 ];
+
+projects.forEach(project => {
+    project.technologies.push('Git'); //Adding Git to all projects
+});
 
 
 // DOM elements
@@ -81,9 +85,9 @@ const displayProjects = (projectsToShow) => {
         boldLabel.textContent = 'Tech: ';
 
         const link = document.createElement('a');
-        link.href = project.link;
+        link.setAttribute('href', project.link);
         link.textContent = 'View Project →';
-        link.target = '_blank';                    // Opens in new tab
+        link.setAttribute('target', '_blank');
         link.rel = 'noopener noreferrer';
         link.style.fontSize = '1.4rem';              
         link.style.color = 'var(--brand)';

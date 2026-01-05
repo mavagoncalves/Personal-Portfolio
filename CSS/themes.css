@@ -24,6 +24,12 @@ body.dark-theme .btn{
     color: white;
 }
 
+body.dark-theme .clearBtn{
+    color: white;
+    background-color: #a0a0a0;
+}
+
+
 body.dark-theme input, 
 body.dark-theme textarea {
     background: #2d2d2d;
@@ -51,4 +57,9 @@ body.blue-theme .avatar{
 body.blue-theme .btn {
     background-color: #0d47a1;
     color: white;
+}
+
+body.blue-theme .clearBtn{
+    color: white;
+    background-color: #619cdb;
 }
