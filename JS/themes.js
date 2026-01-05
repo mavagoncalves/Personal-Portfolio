@@ -28,5 +28,14 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             return 'light'; // default
         };
+    
+    // BUTTONS
+    themeButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const theme = btn.getAttribute('data-theme');
+            applyTheme(theme);
+            saveTheme(theme);
+        });
+    });
 
 });
