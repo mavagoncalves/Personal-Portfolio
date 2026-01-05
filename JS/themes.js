@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', () => {
+
 const themeButtons = document.querySelectorAll('.theme-btn');
 const body = document.body;
 
@@ -10,3 +12,10 @@ const applyTheme = (theme) => {
         body.classList.add(`${theme}-theme`);
     }
 };
+
+const saveTheme = (theme) => {
+        const expiration = 60 * 60 * 24 * 30;
+        document.cookie = `selectedTheme=${theme}; max-age=${expiration}; path=/`;
+    };
+
+});
