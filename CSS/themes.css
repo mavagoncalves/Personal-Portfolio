@@ -9,6 +9,7 @@ body.dark-theme {
     --muted: #a0a0a0;
     --card-bg: #1e1e1e;
     --shadow-sm: 0 4px 12px rgba(223, 219, 219, 0.5);
+    --shadow-lg: 0 4px 12px rgba(223, 219, 219, 0.5);
 }
 
 body.dark-theme .site-header {
@@ -16,7 +17,7 @@ body.dark-theme .site-header {
 }
 
 body.dark-theme .avatar{
-    border-color:#8cee9262;
+    border-color:#a9f4ae48;
 }
 
 body.dark-theme .btn{

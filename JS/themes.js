@@ -11,6 +11,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (theme !== 'light') {
             body.classList.add(`${theme}-theme`);
         }
+
+        themeButtons.forEach(btn => {
+            if (btn.getAttribute('data-theme') === theme) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
+        });
     };
 
     const saveTheme = (theme) => {

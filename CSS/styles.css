@@ -136,6 +136,12 @@ img {
     border-color: var(--brand);
 }
 
+.theme-btn.active {
+    border-color: var(--brand);
+    background-color: var(--brand-light);
+    opacity: 1;
+}
+
 
 /* -----------------------------------------------------
    HERO SECTION
