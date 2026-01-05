@@ -25,12 +25,21 @@ body.dark-theme textarea {
 /* BLUE THEME */
 body.blue-theme {
     --bg: #e3f2fd;
-    --text: #0d47a1;
+    --text: #113d80;
     --muted: #1976d2;
     --brand: #1565c0;
     --card-bg: #bbdefb;
 }
 
+body.blue-theme .site-header{
+    background: #79aaf4;
+}
+
+body.blue-theme .avatar{
+    border-color:#1772cd;
+}
+
 body.blue-theme .btn {
     background-color: #0d47a1;
+    color: white;
 }
