@@ -1,0 +1,36 @@
+body, .project-card, .site-header {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* DARK THEME */
+body.dark-theme {
+    --bg: #121212;
+    --text: #ffffff;
+    --muted: #a0a0a0;
+    --card-bg: #1e1e1e;
+    --shadow-sm: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+body.dark-theme .site-header {
+    background: rgba(18, 18, 18, 0.9);
+}
+
+body.dark-theme input, 
+body.dark-theme textarea {
+    background: #2d2d2d;
+    color: white;
+    border-color: #444;
+}
+
+/* BLUE THEME */
+body.blue-theme {
+    --bg: #e3f2fd;
+    --text: #0d47a1;
+    --muted: #1976d2;
+    --brand: #1565c0;
+    --card-bg: #bbdefb;
+}
+
+body.blue-theme .btn {
+    background-color: #0d47a1;
+}
