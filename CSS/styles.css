@@ -329,9 +329,11 @@ section {
 ----------------------------------------------------- */
 .filter-buttons {
     display: flex;
+    width: 100%;
     gap: 0.5rem;
     flex-wrap: wrap;
     margin-bottom: 1rem;
+    justify-content: center;
 }
 
 .filter-btn {
