@@ -720,7 +720,11 @@ section {
     }
 
     /* Projects grid stacked for mobile */
-    .projects-grid {
+    .projects-grid-full {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-grid{
         grid-template-columns: 1fr;
     }
 
