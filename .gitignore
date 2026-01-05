@@ -1,0 +1,13 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# VS Code / Editors
+.vscode/
+*.code-workspace
+
+# Logs
+*.log
+
+# Environment Variables
+.env
