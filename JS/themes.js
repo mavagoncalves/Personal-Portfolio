@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const applyTheme = (theme) => {
         // remove all themes 
-        body.classList.remove('dark', 'blue');
+        body.classList.remove('dark-theme', 'blue-theme');
         
         // Add new theme if not default light
         if (theme !== 'light') {
