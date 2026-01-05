@@ -300,7 +300,7 @@ section {
 
 .project-card:hover {
     transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 4px 20px var(--shadow-lg);
 }
 
 .thumb {

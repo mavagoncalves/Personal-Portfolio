@@ -8,11 +8,19 @@ body.dark-theme {
     --text: #ffffff;
     --muted: #a0a0a0;
     --card-bg: #1e1e1e;
-    --shadow-sm: 0 4px 12px rgba(0,0,0,0.5);
+    --shadow-sm: 0 4px 12px rgba(223, 219, 219, 0.5);
 }
 
 body.dark-theme .site-header {
     background: rgba(18, 18, 18, 0.9);
+}
+
+body.dark-theme .avatar{
+    border-color:#8cee9262;
+}
+
+body.dark-theme .btn{
+    color: white;
 }
 
 body.dark-theme input, 
@@ -36,7 +44,7 @@ body.blue-theme .site-header{
 }
 
 body.blue-theme .avatar{
-    border-color:#1772cd;
+    border-color:#8cbdee62;
 }
 
 body.blue-theme .btn {
