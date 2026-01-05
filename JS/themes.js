@@ -38,4 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    const loadedTheme = loadTheme();
+    applyTheme(loadedTheme);
+
 });
