@@ -22,7 +22,7 @@ window.addEventListener('load', () => {
     };
 
     const saveTheme = (theme) => {
-            const expiration = 60 * 60 * 24 * 30;
+            const expiration = 60 * 60 * 24 * 30; 
             document.cookie = `selectedTheme=${theme}; max-age=${expiration}; path=/`;
         };
 
